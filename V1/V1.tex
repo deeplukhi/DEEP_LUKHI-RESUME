@@ -1,0 +1,145 @@
+%-------------------------
+% Resume in Latex
+% Author: Customized for Deep Lukhi
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    {\Huge \scshape Deep Lukhi} \\ \vspace{4pt}
+    \textbf{\Large \scshape Aspiring Software Engineer | C++ \& Data Structures} \\ \vspace{8pt}
+    \small
+    \faPhone\ +91~8460908591 \quad $|$ \quad
+    \faEnvelope\ \href{mailto:deeplukhi11@gmail.com}{deeplukhi11@gmail.com} \quad $|$ \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/deeplukhi/}{linkedin.com/in/deeplukhi} \quad $|$ \quad
+    \faGithub\ \href{https://github.com/deeplukhi}{github.com/deeplukhi}
+\end{center}
+
+%---------- SUMMARY ----------
+\section{Summary}
+Software engineering undergraduate with a strong foundation in \textbf{C++ and Data Structures and Algorithms}. Experience building \textbf{command-line applications} and \textbf{graph-based systems}. Solved \textbf{550+ algorithmic problems}, focusing on clean code, correctness, and efficiency.
+
+%---------- SKILLS ----------
+\section{Skills}
+\textbf{Programming Languages:} C, C++ \\
+\textbf{Core Concepts:} Data Structures and Algorithms, Object-Oriented Programming, STL \\
+\textbf{Developer Tools:} Git, GitHub, VS Code, Linux (basic) \\
+\textbf{Problem Solving Platforms:} LeetCode, GeeksforGeeks, CodeStudio
+
+%---------- PROJECTS ----------
+%---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{CLI Authentication System} $|$ \emph{C++, OOP, File Handling, Security}}{\href{https://github.com/deeplukhi/cli-authentication-cpp}{\faGithub}}
+\resumeItemListStart
+\resumeItem{Built a secure, modular C++ CLI authentication system with registration, login, and password change workflows.}
+\resumeItem{Implemented password hashing, input validation, and file-based persistence with per-user credential files.}
+\resumeItem{Designed clean layered architecture separating UI, business logic, validation, and utilities.}
+\resumeItem{Added unit tests for validators and automated builds using Makefile.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Graph-Based Movie Recommendation System} $|$ \emph{C++, Graphs, DSA}}{\href{https://github.com/deeplukhi/Social-Recommendation-Engine}{\faGithub}}
+\resumeItemListStart
+\resumeItem{Developed a graph-based recommendation engine modeling users and items as nodes with interactions as edges.}
+\resumeItem{Implemented multiple algorithms including Collaborative Filtering, Popularity-Based, and BFS-based recommendations.}
+\resumeItem{Used adjacency lists for efficient graph traversal with time complexity up to \textbf{O(V + E)}.}
+\resumeItem{Enabled persistent storage, modular algorithm extension, and automated builds via Makefile.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Flight Route Planner} $|$ \emph{C++, Graph Algorithms, Dijkstra}}{\href{https://github.com/deeplukhi/FlightRoutePlanner}{\faGithub}}
+\resumeItemListStart
+\resumeItem{Built a professional-grade flight routing system modeling cities and flights as weighted graphs.}
+\resumeItem{Implemented Dijkstra’s Algorithm to compute both cheapest (cost) and fastest (time) routes.}
+\resumeItem{Added file-based persistence for routes, color-coded CLI interface, and comprehensive test suite.}
+\resumeItem{Achieved optimal routing with time complexity \textbf{O((V + E) log V)} using priority queues.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- ACHIEVEMENTS ----------
+\section{Achievements \& Activities}
+\resumeItemListStart
+  \resumeItem{\textbf{Hackathon Participant:} Participated in multiple intra-college and inter-college hackathons, demonstrating rapid prototyping abilities, collaborative problem-solving, and delivery of functional solutions under time constraints.}
+\resumeItem{\textbf{Competitive Programming:} Solved \textbf{550+ Data Structures and Algorithms problems} across \textbf{\href{https://leetcode.com/u/deeplukhi11/}{LeetCode}}, \textbf{\href{https://www.geeksforgeeks.org/profile/deeplux1js}{GeeksforGeeks}}, and \textbf{\href{https://www.naukri.com/code360/profile/deeplukhi}{CodeStudio}}, with consistent focus on optimization and accuracy.}
+  \resumeItem{\textbf{GeeksforGeeks University Rank:} Achieved \textbf{Rank 1} on GeeksforGeeks at the university level, reflecting strong problem-solving skills and consistent competitive performance.}
+\resumeItemListEnd
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor of Technology in Information Technology}{2023 -- 2027}
+    {Bhagwan Mahavir University, Surat}{CGPA: 8.1 / 10}
+\resumeSubHeadingListEnd
+
+%---------- ADDITIONAL ----------
+\section{Additional Information}
+\textbf{Key Strengths:} Strong analytical and problem-solving abilities, quick learner with adaptability to new technologies, effective team collaboration, and commitment to writing clean, scalable, and maintainable code. \\
+
+
+\end{document}
