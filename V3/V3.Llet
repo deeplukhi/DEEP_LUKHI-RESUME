@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% IMPORTANT: COMPILE WITH XeLaTeX
+% Requires: deedy-resume-openfont.sty
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Deep}{Lukhi}{%
+  \href{mailto:deeplukhi11@gmail.com}{deeplukhi11@gmail.com}
+  \quad $|$\quad \texttt{+91\,8460908591}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Languages}
+C \textbullet{} C++ \textbullet{} JavaScript  
+\sectionsep
+
+\subsection{Backend}
+Node.js \textbullet{} Express.js \textbullet{} REST APIs \\
+JWT \textbullet{} Swagger/OpenAPI
+\sectionsep
+
+\subsection{Database}
+PostgreSQL \textbullet{} MySQL \textbullet{} Prisma ORM 
+\sectionsep
+
+\subsection{Tools}
+Git \textbullet{} GitHub \textbullet{} Docker \textbullet{} Postman
+\sectionsep
+
+\subsection{Core CS}
+Data Structures \& Algorithms \textbullet{} Object-Oriented Programming (OOP) \textbullet{} DBMS \textbullet{} Operating Systems \textbullet{} Computer Networks
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Bhagwan Mahavir\\University}
+\descript{B.Tech in Information Technology}
+\location{2023 -- 2027 | Surat, India}
+\location{CGPA: 7.84 / 10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Data Structures \& Algorithms \\
+Object-Oriented Programming \\
+Database Management Systems \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Portfolio:// \href{https://deeplukhi.vercel.app/}{\bf deeplukhi.vercel.app} \\
+Github:// \href{https://github.com/deeplukhi}{\bf deeplukhi} \\
+LinkedIn:// \href{https://www.linkedin.com/in/deeplukhi/}{\bf deeplukhi} \\
+Codolio:// \href{https://codolio.com/profile/deeplukhi}{\bf deeplukhi}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+\textbullet{} Solved \textbf{550+} DSA problems on LeetCode,
+GeeksforGeeks, and CodeStudio. Secured \textbf{Rank 1} on
+GeeksforGeeks at the university level.
+
+\textbullet{} Built and deployed \textbf{2+} production-quality
+\textbf{backend} and \textbf{full-stack} applications; contributed
+to scalable \textbf{REST APIs} during a \textbf{6-month} internship.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summary}
+\textbf{Backend Developer} with experience building \textbf{scalable backend systems} and \textbf{REST APIs} using \textbf{Node.js}, \textbf{Express.js}, \textbf{PostgreSQL}, \textbf{Prisma}, and \textbf{Docker}. Strong foundation in \textbf{Data Structures \& Algorithms} with \textbf{550+} problems solved and a \textbf{top university rank}. Passionate about designing \textbf{efficient}, \textbf{maintainable}, and \textbf{high-performance} backend architectures.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Vailora Technolab}
+\descript{| Backend Developer Intern}
+\location{Feb 2026 -- Jul 2026}
+\vspace{\topsep}
+\begin{tightemize}
+  \item Developed \textbf{40+ REST APIs} across \textbf{Authentication}, \textbf{Employee}, \textbf{Task Management}, and \textbf{Daily Reporting} modules using \textbf{Node.js}, \textbf{Express.js}, \textbf{PostgreSQL}, and \textbf{Prisma ORM} for a \textbf{multi-tenant HRMS} platform.
+  \item Designed secure \textbf{authentication and authorization} workflows using \textbf{JWT}, \textbf{bcrypt}, and \textbf{role-based access control (RBAC)} across multiple user roles.
+  \item Optimized \textbf{backend performance} by refactoring complex \textbf{Prisma queries}, improving database interactions, and implementing efficient \textbf{indexing strategies} to reduce API response time.
+  \item Architected \textbf{reusable service layers} and modular backend components following \textbf{layered architecture}, improving code maintainability and scalability.
+  \item Diagnosed and resolved \textbf{20+ production issues} through \textbf{root cause analysis}, backend debugging, and database validation, improving \textbf{application stability}.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{SnippetVault}
+\descript{| Full-Stack Code Snippet Manager}
+\location{Node.js, Express.js, PostgreSQL, Prisma, React, Docker}
+\href{https://snippetvault-v1.vercel.app/}{\bf Live}
+\;$|$\; \href{https://github.com/deeplukhi/Snippet-Manager-Frontend}{\bf Frontend}
+\;$|$\; \href{https://github.com/deeplukhi/Snippet-Manager-Backend}{\bf Backend}
+\vspace{\topsep}
+\begin{tightemize}
+  \item Built a \textbf{full-stack} platform enabling users to \textbf{create}, \textbf{organize}, \textbf{search}, and \textbf{share} code snippets with \textbf{syntax highlighting} and collections.
+  \item Architected a \textbf{modular REST API} with \textbf{layered architecture}, \textbf{JWT authentication}, \textbf{request validation}, and \textbf{Swagger documentation}.
+  \item Developed a \textbf{responsive React} frontend with \textbf{debounced search}, \textbf{client-side caching}, and optimized \textbf{state management}.
+  \item Containerized with \textbf{Docker} and deployed on \textbf{Vercel} for consistent development and scalable delivery.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Social Recommendation Engine}
+\descript{| Graph-Based Recommendation System}
+\location{C++, Graphs, DSA}
+\href{https://github.com/deeplukhi/Social-Recommendation-Engine}{\bf GitHub}
+\vspace{\topsep}
+\begin{tightemize}
+  \item Built a \textbf{graph-based} recommendation engine using \textbf{adjacency lists} to model user relationships and content interactions efficiently.
+  \item Implemented \textbf{collaborative filtering}, \textbf{popularity-based ranking}, and \textbf{BFS traversal} to generate personalized recommendations with \textbf{O(V+E)} time complexity.
+\end{tightemize}
+
+\end{minipage}
+\end{document}
