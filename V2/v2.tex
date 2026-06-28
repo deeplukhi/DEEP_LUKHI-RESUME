@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author: Deep Lukhi
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Tighter margins for one-page fit
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Consistent section formatting
+\titleformat{\section}{
+  \vspace{4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Consistent spacing commands - TIGHTENED
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-3pt}  % Changed from -4pt to -3pt for consistency
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={$\bullet$}, itemsep=0.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}  % Changed from -3pt to maintain consistency
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\pdfgentounicode=1
+
+
+
+\begin{document}
+
+%---------- HEADING WITH HYPERLINKS ----------
+\begin{center}
+    {\Huge \scshape Deep Lukhi} \\ \vspace{5pt}
+    \small
+     +91~8460908591 \quad $|$ \quad
+     \href{mailto:deeplukhi11@gmail.com}{deeplukhi11@gmail.com} \quad $|$ \quad
+     \href{https://deeplukhi.vercel.app/}{Portfolio} \quad $|$ \quad
+     \href{https://www.linkedin.com/in/deeplukhi/}{LinkedIn} \quad $|$ \quad
+     \href{https://github.com/deeplukhi}{GitHub} \quad $|$ \quad
+     \href{https://codolio.com/profile/deeplukhi}{coding profile}
+\end{center}
+%---------- SUMMARY ----------
+\section{Summary}
+Backend Developer with experience building scalable backend systems and REST APIs using Node.js, Express.js, PostgreSQL, Prisma, and Docker. Strong foundation in Data Structures \& Algorithms with 550+ problems solved and a top university rank. Passionate about designing efficient, maintainable, and high-performance backend architectures.
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Technology in Information Technology}{2023 -- 2027}
+{Bhagwan Mahavir University, Surat}{CGPA: 7.84 / 10}
+\resumeSubHeadingListEnd
+
+%---------- SKILLS ----------
+\section{Skills}
+\textbf{Languages:} C, C++, JavaScript, TypeScript \\
+\textbf{Backend:} Node.js, Express.js, REST APIs, JWT, Swagger/OpenAPI \\
+\textbf{Database:} PostgreSQL, MySQL, Prisma ORM, Redis \\
+\textbf{Frontend:} React.js, Next.js \\
+\textbf{Tools:} Git, GitHub, Docker, Postman \\
+\textbf{Core CS:} Data Structures \& Algorithms, OOP, DBMS, Operating Systems, Computer Networks
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Backend Developer Intern}{Feb 2026 -- Jul 2026}
+{Vailora Technolab}{}
+
+\resumeItemListStart
+
+\resumeItem{Developed 40+ REST APIs across Authentication, Employee, Task Management, and Daily Reporting modules using Node.js, Express.js, PostgreSQL, and Prisma ORM, enabling scalable backend services for a multi-tenant HRMS platform.}
+
+\resumeItem{Designed and implemented secure authentication and authorization workflows using JWT, bcrypt, and role-based access control (RBAC), ensuring secure access management across multiple user roles.}
+
+\resumeItem{Optimized backend performance by refactoring complex Prisma queries, improving database interactions, and implementing efficient indexing strategies to reduce API response time.}
+
+\resumeItem{Architected reusable service layers and modular backend components following layered architecture principles, improving code maintainability, scalability, and ease of feature development.}
+
+\resumeItem{Diagnosed and resolved 20+ production issues by performing root cause analysis, debugging backend services, and validating database operations, improving application stability across releases.}
+
+
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+% SnippetVault
+\resumeProjectHeading
+{\textbf{SnippetVault} $|$ \emph{Node.js, Express.js, PostgreSQL, Prisma, React, Docker}}{\href{https://snippetvault-v1.vercel.app/}{Live} $|$ \href{https://github.com/deeplukhi/Snippet-Manager-Frontend}{Frontend} $|$ \href{https://github.com/deeplukhi/Snippet-Manager-Backend}{Backend}}
+\resumeItemListStart
+
+\resumeItem{Built a full-stack code snippet management platform enabling users to create, organize, search, and securely share code snippets with syntax highlighting and collections.}
+
+\resumeItem{Architected a modular REST API using Node.js, Express.js, PostgreSQL, and Prisma ORM with layered architecture, JWT authentication, request validation, and Swagger documentation.}
+
+\resumeItem{Developed a responsive React frontend with debounced search, client-side caching, and optimized state management to deliver a fast and seamless user experience.}
+
+\resumeItem{Containerized the application using Docker and deployed it on Vercel, enabling consistent development, deployment, and scalable application delivery.}
+
+\resumeItemListEnd
+
+% Social Recommendation Engine
+\resumeProjectHeading
+{\textbf{Social Recommendation Engine} $|$ \emph{C++, Graphs, DSA}}{\href{https://github.com/deeplukhi/Social-Recommendation-Engine}{\faGithub}}
+\resumeItemListStart
+
+\resumeItem{Built a graph-based recommendation engine using adjacency lists to model user relationships and content interactions efficiently.}
+
+\resumeItem{Implemented collaborative filtering, popularity-based ranking, and BFS traversal algorithms to generate personalized recommendations with O(V+E) time complexity.}
+
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- ACHIEVEMENTS ----------
+\section{Achievements}
+\resumeItemListStart
+\resumeItem{Solved 550+ Data Structures & Algorithms problems across LeetCode, GeeksforGeeks, and CodeStudio, securing Rank 1 on
+GeeksforGeeks at the university level.}
+\resumeItem{Built and deployed 2+ production-quality backend and full-stack applications, and developed production features during a 6-month
+Backend Developer Internship, contributing to scalable REST APIs and enterprise backend systems.}
+\resumeItemListEnd
+
+\end{document}
