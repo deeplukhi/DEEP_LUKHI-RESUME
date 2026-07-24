@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% IMPORTANT: COMPILE WITH XeLaTeX
+% Requires: deedy-resume-openfont.sty
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+% --- Eliminates bottom white space by shrinking bottom margin ---
+\addtolength{\textheight}{24pt}
+
+% --- Tightens lists and links perfectly ---
+\renewcommand{\sectionsep}{\vspace{8pt}}
+\setlength{\parskip}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+\setlength{\itemsep}{1pt}
+\setlength{\parsep}{0pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Deep}{Lukhi}{%
+  \href{mailto:deeplukhi11@gmail.com}{deeplukhi11@gmail.com}
+  \quad $|$\quad \texttt{+91\,8460908591}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Languages}
+C \textbullet{} C++ \textbullet{} JavaScript 
+\sectionsep
+
+\subsection{Backend}
+Node.js \textbullet{} Express.js \textbullet{} REST APIs \textbullet{} JWT
+\sectionsep
+
+\subsection{Database}
+PostgreSQL \textbullet{} MySQL \textbullet{} Prisma ORM
+\sectionsep
+
+\subsection{Tools}
+Git \textbullet{} GitHub \textbullet{} Docker \textbullet{} Postman \\ \textbullet{} Swagger/OpenAPI
+\sectionsep
+
+\subsection{Core CS}
+DSA \textbullet{} OOP \textbullet{} DBMS \textbullet{} OS \textbullet{} CN
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Bhagwan Mahavir\\University}
+\descript{B.Tech in Information Technology}
+\location{2023 -- 2027 | Surat, India}
+\location{SGPA: 8.0 / 10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Portfolio:// \href{https://deeplukhi.vercel.app/}{\bf deeplukhi.vercel.app} \\
+Github:// \href{https://github.com/deeplukhi}{\bf deeplukhi} \\
+LinkedIn:// \href{https://www.linkedin.com/in/deeplukhi/}{\bf deeplukhi} \\
+Codolio:// \href{https://codolio.com/profile/deeplukhi}{\bf deeplukhi}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Data Structures \& Algorithms \\
+Object-Oriented Programming \\
+Database Management Systems \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+
+\textbullet{} Shipped production compliance systems handling complex edge cases—solving paisa-level tax rounding drift and building exponential backoff for \textbf{third-party API} resilience.
+
+\textbullet{} \textbf{Rank 1} at university level on GeeksforGeeks; solved \textbf{550+} DSA problems across LeetCode, GFG, and CodeStudio.
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+Listening to Music \textbullet{} Watching Documentaries \textbullet{} Driving \textbullet{} Fitness
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summary}
+\textbf{Backend Developer} with production experience building \textbf{financial and compliance systems} using Node.js and TypeScript. Skilled in resilient architectures—\textbf{DB-backed outbox patterns}, \textbf{AES-256 encryption}, and \textbf{tax-accurate billing engines}. Strong algorithmic rigor with \textbf{Rank 1} at university level.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Vailora Technolab}
+\descript{| Backend Developer Intern}
+\location{Feb 2026 -- Jul 2026}
+\location{\textbf{Tech Stack:} TypeScript, React, Node.js, Express, PostgreSQL, Prisma}
+\vspace{4pt}
+\begin{tightemize}
+  \item Engineered \textbf{E-Invoice \& E-Way Bill} integration via an \textbf{Anti-Corruption Layer} decoupling logic from the Masters India GSP API, with a \textbf{DB-backed outbox pattern} (exponential backoff: 30s $\rightarrow$ 6h) for resilient async generation.
+  \item Designed a \textbf{tax-inclusive billing engine} back-calculating GST base from menu prices with \textbf{component-level rounding drift correction} across CGST/SGST/CESS for zero-discrepancy totals.
+  \item Implemented \textbf{AES-256-GCM encryption} with versioned envelope format for at-rest credential storage; built a \textbf{recursive utility} to mask sensitive fields across all logs and audit trails.
+  \item Architected \textbf{server-side 3-tier price resolution} (variant $\rightarrow$ outlet $\rightarrow$ base) for menu modifiers, eliminating \textbf{client-side price manipulation} vulnerabilities.
+  \item Developed and unit-tested a \textbf{pure weighted average cost function} that automatically syncs raw material pricing on inbound receipts, strictly handling complex edge cases like zero-on-hand and float precision drift.
+    \item Built a \textbf{configurable discount policy} and centralized bill formatting system---enforcing conditional API/UI validation for customer details per outlet, while unifying thermal and browser print surfaces into a \textbf{single source of truth}.
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{SnippetVault}
+\descript{| Full-Stack Code Snippet Manager}
+\location{Node.js, Express.js, PostgreSQL, Prisma, React, Docker}
+\href{https://snippetvault-v1.vercel.app/}{\bf Live}
+\;$|$\; \href{https://github.com/deeplukhi/Snippet-Manager-Frontend}{\bf Frontend}
+\;$|$\; \href{https://github.com/deeplukhi/Snippet-Manager-Backend}{\bf Backend}
+\vspace{2pt}
+\begin{tightemize}
+  \item Built a \textbf{platform} to create, organize, search, and share code snippets with \textbf{syntax highlighting} and collections.
+  \item Architected a \textbf{modular REST API} with layered architecture, \textbf{JWT auth}, request validation, and \textbf{Swagger docs}.
+  \item Developed a \textbf{responsive React} frontend with \textbf{debounced search}, client-side caching, and optimized state management.
+  \item Containerized with \textbf{Docker} and deployed on \textbf{Vercel} for consistent development and scalable delivery.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Social Recommendation Engine}
+\descript{| Graph-Based Recommendation System}
+\location{C++, Graphs, DSA}
+\href{https://github.com/deeplukhi/Social-Recommendation-Engine}{\bf GitHub}
+\vspace{2pt}
+\begin{tightemize}
+  \item Built a \textbf{graph-based} recommendation engine using \textbf{adjacency lists} to model user relationships and content interactions.
+  \item Implemented \textbf{collaborative filtering}, popularity-based ranking, and \textbf{BFS traversal} for personalized recommendations in \textbf{O(V+E)} time.
+\end{tightemize}
+
+\end{minipage}
+\end{document}
